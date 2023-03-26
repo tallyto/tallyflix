@@ -43,7 +43,6 @@ public class PlanoController {
             Plano plano = planoExistente.get();
             plano.setNome(planoAtualizado.getNome());
             plano.setPreco(planoAtualizado.getPreco());
-            plano.setDuracaoEmMeses(planoAtualizado.getDuracaoEmMeses());
             plano = planoService.save(plano);
             return ResponseEntity.ok(plano);
         } else {

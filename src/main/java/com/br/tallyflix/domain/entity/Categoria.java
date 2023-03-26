@@ -7,19 +7,16 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity(name = "planos")
+@Entity(name = "categorias")
 @Getter
 @Setter
-public class Plano {
+public class Categoria {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String nome;
 
-    private String descricao;
-
-    private Double preco;
-
-
+    // Construtores, getters e setters
 }
